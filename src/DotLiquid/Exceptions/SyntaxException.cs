@@ -1,8 +1,9 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace DotLiquid.Exceptions
 {
-	[Serializable]
+	[DataContract]
 	public class SyntaxException : LiquidException
 	{
 		public SyntaxException(string message, params string[] args)

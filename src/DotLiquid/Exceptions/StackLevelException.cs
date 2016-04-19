@@ -1,8 +1,9 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace DotLiquid.Exceptions
 {
-	[Serializable]
+	[DataContract]
 	public class StackLevelException : LiquidException
 	{
 		public StackLevelException(string message)

@@ -1,8 +1,9 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace DotLiquid.Exceptions
 {
-	[Serializable]
+	[DataContract]
 	public class ArgumentException : LiquidException
 	{
 		public ArgumentException(string message, params string[] args)

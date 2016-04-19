@@ -83,7 +83,7 @@ namespace DotLiquid
 
 			return string.IsNullOrEmpty(input)
 				? input
-				: CultureInfo.CurrentCulture.TextInfo.ToTitleCase(input);
+				: Regex.Replace(input, @"\b(\w)", m => m.Value.ToUpper());
 		}
 
 		public static string Escape(string input)

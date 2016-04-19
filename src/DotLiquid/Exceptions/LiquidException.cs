@@ -1,8 +1,9 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace DotLiquid.Exceptions
 {
-	[Serializable]
+	[DataContract]
 	public abstract class LiquidException : ApplicationException
 	{
 		protected LiquidException(string message, Exception innerException)

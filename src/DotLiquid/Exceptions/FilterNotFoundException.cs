@@ -1,8 +1,9 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace DotLiquid.Exceptions
 {
-	[Serializable]
+	[DataContract]
 	public class FilterNotFoundException : LiquidException
 	{
 		public FilterNotFoundException(string message, FilterNotFoundException innerException)
